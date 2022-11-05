@@ -84,57 +84,66 @@ class _ContentState extends State<Content> {
           ),
         ),
         Positioned(
-          bottom: 10,
-          left: widget.width * 0.1,
-          right: widget.width * 0.1,
+          bottom: 0.05 * widget.height,
+          left: 10,
+          right: 10,
           child: Row(
             children: [
-              IconButton(
-                onPressed: () {
-                  String url = "https://github.com/oyeniyiridwan";
-                  launchSocials(url);
-                },
-                icon: const ImageIcon(
-                  AssetImage("images/github.png"),
-                  color: Color(0xff171515),
-                  size: 40,
+              Expanded(
+                flex: 1,
+                child: IconButton(
+                  onPressed: () {
+                    String url = "https://github.com/oyeniyiridwan";
+                    launchSocials(url);
+                  },
+                  icon: const ImageIcon(
+                    AssetImage("images/github.png"),
+                    color: Color(0xff171515),
+                    size: 40,
+                  ),
                 ),
               ),
-              SizedBox(width: widget.width * 0.1),
-              IconButton(
-                onPressed: () {
-                  String url = "https://www.linkedin.com/in/ridwanoyeniyi";
-                  launchSocials(url);
-                },
-                icon: const ImageIcon(
-                  AssetImage("images/linked in.png"),
-                  color: Color(0xff0072b1),
-                  size: 40,
+              Expanded(
+                flex: 1,
+                child: IconButton(
+                  onPressed: () {
+                    String url = "https://www.linkedin.com/in/ridwanoyeniyi";
+                    launchSocials(url);
+                  },
+                  icon: const ImageIcon(
+                    AssetImage("images/linked in.png"),
+                    color: Color(0xff0072b1),
+                    size: 40,
+                  ),
                 ),
               ),
-              SizedBox(width: widget.width * 0.1),
-              IconButton(
-                onPressed: () {
-                  String url = "https://www.instagram.com/shevy5_/?hl=en";
-                  launchSocials(url);
-                },
-                icon: const ImageIcon(
-                  AssetImage("images/instagram.png"),
-                  color: Color(0xffbc2a8d),
-                  size: 40,
+              Expanded(
+                flex: 1,
+                child: IconButton(
+                  onPressed: () {
+                    String url = "https://www.instagram.com/shevy5_/?hl=en";
+                    launchSocials(url);
+                  },
+                  icon: const ImageIcon(
+                    AssetImage("images/instagram.png"),
+                    color: Color(0xffbc2a8d),
+                    size: 40,
+                  ),
                 ),
               ),
-              SizedBox(width: widget.width * 0.1),
-              IconButton(
-                onPressed: () {
-                  String url =
-                      "https://twitter.com/Shevy_05?t=3QVCkVQ9VdsoXpzVRXRhZw&s=09";
-                  launchSocials(url);
-                },
-                icon: const ImageIcon(
-                  AssetImage("images/twitter.png"),
-                  color: Color(0xff00acee),
-                  size: 40,
+              Expanded(
+                flex: 1,
+                child: IconButton(
+                  onPressed: () {
+                    String url =
+                        "https://twitter.com/Shevy_05?t=3QVCkVQ9VdsoXpzVRXRhZw&s=09";
+                    launchSocials(url);
+                  },
+                  icon: const ImageIcon(
+                    AssetImage("images/twitter.png"),
+                    color: Color(0xff00acee),
+                    size: 40,
+                  ),
                 ),
               )
             ],
